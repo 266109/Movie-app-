@@ -1,0 +1,91 @@
+@import "../../common/colors.scss";
+
+.movie-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-left {
+  width: 70%;
+}
+.movie-title {
+  color: $font-primary;
+  padding: 15px 0px;
+  font-size: 30px;
+}
+.movie-rating {
+  color: $font-secondary;
+  display: flex;
+  justify-content: space-between;
+
+  .fa-star {
+    color: gold;
+    padding: 0px 2px;
+  }
+  .fa-thumbs-up {
+    color: white;
+    padding: 0px 2px;
+  }
+  .fa-film {
+    color: lightgoldenrodyellow;
+    padding: 0px 2px;
+  }
+  .fa-calendar {
+    color: lightgoldenrodyellow;
+    padding: 0px 2px;
+  }
+}
+
+.movie-plot {
+  color: $font-primary;
+  padding: 20px 0px;
+  line-height: 1.6rem;
+}
+
+.other-details {
+  color: $font-secondary;
+  padding-bottom: 20px;
+
+  .s1 {
+    color: $font-primary;
+    padding: 10px 0px;
+    font-weight: 600;
+    width: 200px;
+    display: inline-block;
+  }
+  .s2 {
+    width: 100px;
+    display: inline;
+    left: 100px;
+  }
+  .movie-director {
+    padding: 5px 0px;
+  }
+  .movie-stars {
+    padding: 5px 0px;
+  }
+  .movie-generes {
+    padding: 5px 0px;
+  }
+  .movie-Languages {
+    padding: 5px 0px;
+  }
+  .movie-Awards {
+    padding: 5px 0px;
+  }
+}
+
+.section-right {
+  img {
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
+  }
+}
